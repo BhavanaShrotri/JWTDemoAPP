@@ -1,25 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+using System.Security.Cryptography;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
+//RSA : ASymmetric key 
 
-var app = builder.Build();
+var rsaKey = RSA.Create();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+var privateKey = rsaKey.ExportRSAPrivateKey();
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();
+File.WriteAllBytes("key", privateKey);
