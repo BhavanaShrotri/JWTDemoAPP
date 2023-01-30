@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "KeyGen": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:58775;http://localhost:58776"
+    }
+  }
+}
