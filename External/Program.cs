@@ -4,13 +4,13 @@ using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var jwkString = "{\"additionalData\":{},\"alg\":null,\"crv\":null,\"d\":null,\"dp\":null,\"dq\":null,\"e\":\"AQAB\",\"k\":null,\"keyId\":null,\"keyOps\":[],\"kid\":null,\"kty\":\"RSA\",\"n\":\"xUt-FeBiWr7VxWami2yagQC9yKJ2CrCeRJdoU6g2f_UYn_u1-WihfXc-tthx2C2NZX-39Ddd0AdDnBvjDYCV5ZXtO1qrJO2fcGchV-CGU8QDtQz4MPMIeVKbs2YLgkCeeYp1z93XK1Q-tVgIjlq57MVOfXpSgW5tvtQLOqX1zIY-c8kHd_-9ARhr1wS4W9JBcFX9IesX-kWz1R31WHGeF2Q0Jt8vyOGGxPhx2CrvdD2O6Jo8s01Aox6croqoNg_ge-ob6ZPcUvXDcKy0cosLIugpeSYQGZlsfe39JOxt_5rlvddYECX-dztgFGbjmY1h34Kp9jmHR_Nj7HfmEHM0UQ\",\"oth\":null,\"p\":null,\"q\":null,\"qi\":null,\"use\":null,\"x\":null,\"x5c\":[],\"x5t\":null,\"x5tS256\":null,\"x5u\":null,\"y\":null,\"keySize\":2048,\"hasPrivateKey\":false,\"cryptoProviderFactory\":{\"cryptoProviderCache\":{},\"customCryptoProvider\":null,\"cacheSignatureProviders\":true,\"signatureProviderObjectPoolCacheSize\":64}}";
+var jwkString = "{\"additionalData\":{},\"alg\":null,\"crv\":null,\"d\":null,\"dp\":null,\"dq\":null,\"e\":\"AQAB\",\"k\":null,\"keyId\":null,\"keyOps\":[],\"kid\":null,\"kty\":\"RSA\",\"n\":\"6UViZRYoWJ7Z4wLISZ-d4bMrNdmqWYq4Z0EVBPh4dqvsj7n02T8F-sfhdHBO6RxqtPejcGkcov-UWk0esncON0akoavdGtazz7lfHmmbg826BD72WpzyTfQP-osR8GF0_9ZWDFJLKIvWRWlnI-8nCpAL9jXeYkiiaNdFsi9-xMHEE8QKFBuUaM91hjvcAt60CGm3c02Gnn-LIJ1AiwWL9sZOpjOzitsiMZuCPH66RsCMMp7Q65JuEhlhc-AY7UPWJtEd_83LyScsdryVKdQD8xonqvonbDURQ8uS48k5Yk--raYboW5Gxtzb9RxAMr0_nSo7Ei9FjcFyaXB1ntgncQ\",\"oth\":null,\"p\":null,\"q\":null,\"qi\":null,\"use\":null,\"x\":null,\"x5c\":[],\"x5t\":null,\"x5tS256\":null,\"x5u\":null,\"y\":null,\"keySize\":2048,\"hasPrivateKey\":false,\"cryptoProviderFactory\":{\"cryptoProviderCache\":{},\"customCryptoProvider\":null,\"cacheSignatureProviders\":true,\"signatureProviderObjectPoolCacheSize\":64}}";
 
 builder.Services.AddAuthentication("jwt")
     .AddJwtBearer("jwt", o =>
 {
     o.TokenValidationParameters = new TokenValidationParameters()
-    {
+    {    
         ValidateAudience = false,
         ValidateIssuer = false,
     };

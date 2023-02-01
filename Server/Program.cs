@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 var rsaKey = RSA.Create();
 rsaKey.ImportRSAPrivateKey(File.ReadAllBytes("key"), out _);
 
-builder.Services.AddAuthentication("jwt").AddJwtBearer("jwt", o =>
+builder.Services.AddAuthentication("jwt")
+    .AddJwtBearer("jwt", o =>
 {
     o.TokenValidationParameters = new TokenValidationParameters()
     {
