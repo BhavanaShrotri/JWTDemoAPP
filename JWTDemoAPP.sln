@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyGen", "KeyGen\KeyGen.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{91249921-8E35-42AE-908C-5157E017C579}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "External", "External\External.csproj", "{ABA69491-FC89-4904-80EB-B11BA7CC2153}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{91249921-8E35-42AE-908C-5157E017C579}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91249921-8E35-42AE-908C-5157E017C579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91249921-8E35-42AE-908C-5157E017C579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA69491-FC89-4904-80EB-B11BA7CC2153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA69491-FC89-4904-80EB-B11BA7CC2153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA69491-FC89-4904-80EB-B11BA7CC2153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA69491-FC89-4904-80EB-B11BA7CC2153}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
